@@ -27,7 +27,7 @@ app.post("/send-email", async (req, res) => {
     from: `${nom} ${prenom} <${email}>`,
     to: "guillaumegemelas@gmail.com",
     subject: "Formulaire de contact",
-    text: message,
+    text: `Nom: ${nom}\nPrénom: ${prenom}\nEmail: ${email}\nMessage: ${message}`,
   };
 
   try {
