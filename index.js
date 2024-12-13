@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Configurer Nodemailer
+// Configurer Nodemailer---
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
